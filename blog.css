@@ -1,0 +1,894 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  background: #222222;
+  height: 90px;
+  display: flex;
+  color: white;
+}
+
+.navigation a {
+  padding: 35px 0px 25px 40px;
+  color: white;
+  text-decoration: none;
+  font-family: "Inter";
+}
+
+.navigation img {
+  margin: 20px 200px 10px 10px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation h1 {
+  padding: 25px 100px 25px 25px;
+  font-family: "Inter";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  margin: 25px 0px 25px 100px;
+}
+
+.autoconflict {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  margin: 25px 0px 25px 100px;
+  border-radius: 5px;
+}
+input {
+  border: 1px solid transparent;
+  background-color: black;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+input[type="text"] {
+  border-radius: 5px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+input[type="submit"] {
+  background-color: #222222;
+  color: #222222;
+  margin: 0px 0px 0px 0px;
+  border-radius: 5px;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: black;
+  border-radius: 5px;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+h1 {
+  position: absolute;
+  width: 526px;
+  height: 40px;
+  left: 137px;
+  top: 144px;
+
+  /* Header 1 */
+
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.intro {
+  position: absolute;
+  width: 885px;
+  height: 402px;
+  left: 137px;
+  top: 225px;
+
+  /* Body Text */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  color: #000000;
+}
+
+.company {
+  position: absolute;
+  width: 287px;
+  height: 19px;
+  left: 134px;
+  top: 443px;
+
+  /* Header 3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.companyname {
+  position: absolute;
+  width: 92px;
+  height: 20px;
+  left: 134px;
+  top: 478px;
+
+  /* Body Text */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  /* or 162% */
+
+  color: #000000;
+}
+
+.category {
+  position: absolute;
+  width: 287px;
+  height: 19px;
+  left: 430px;
+  top: 443px;
+
+  /* Header 3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.categoryname {
+  position: absolute;
+  width: 287px;
+  height: 35px;
+  left: 430px;
+  top: 478px;
+
+  /* Body Text */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  color: #000000;
+  text-transform: uppercase;
+}
+.updated {
+  position: absolute;
+  width: 287px;
+  height: 19px;
+  left: 726px;
+  top: 443px;
+
+  /* Header 3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.updatedname {
+  position: absolute;
+  width: 287px;
+  height: 35px;
+  left: 726px;
+  top: 478px;
+
+  /* Body Text */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+  text-color: white;
+}
+.share {
+  position: absolute;
+  width: 393px;
+  height: 18px;
+  left: 130px;
+  top: 381px;
+
+  /* light header3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.fb {
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  left: 144px;
+  top: 444px;
+
+  /* Subtitle */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  color: #262626;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 178px;
+  top: 431px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.tw {
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  left: 190px;
+  top: 444px;
+
+  /* Subtitle */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #262626;
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 128px;
+  top: 431px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.primary {
+  display: flex;
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  left: 128px;
+  top: 485px;
+  /* Subtitle */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.link {
+  position: absolute;
+  width: 223px;
+  height: 47px;
+  left: 128px;
+  top: 486px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  fill: white;
+}
+.email {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  left: 129px;
+  top: 1048px;
+  text-transform: uppercase;
+  text-color: white;
+  background-color: #223781;
+  border-color: #223781;
+}
+
+.column1 {
+  position: absolute;
+  width: 440px;
+  height: 430px;
+  left: 134px;
+  top: 552px;
+}
+
+.column2 {
+  position: absolute;
+  width: 440px;
+  height: 430px;
+  left: 582px;
+  top: 552px;
+}
+
+.question {
+  position: absolute;
+  width: 265px;
+  height: 31px;
+  left: 129px;
+  top: 998px;
+
+  /* Caption */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 26px;
+  /* or 217% */
+
+  text-align: center;
+
+  color: #262626;
+}
+
+.others {
+  position: absolute;
+  width: 540px;
+  height: 28px;
+  left: 128px;
+  top: 1141px;
+
+  /* Header 2 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  /* or 137% */
+
+  color: #000000;
+}
+
+.choices {
+  position: absolute;
+  width: 878px;
+  height: 19px;
+  left: 128px;
+  top: 1180px;
+
+  /* Caption */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 26px;
+  /* or 217% */
+
+  color: #000000;
+}
+
+.ecorp {
+  position: absolute;
+  width: 275px;
+  height: 275px;
+  left: 128px;
+  top: 1223px;
+
+  background: url(.jpg);
+  border-radius: 2px;
+}
+
+.ecorplabel {
+  position: absolute;
+  width: 88px;
+  height: 23px;
+  left: 128px;
+  top: 1511px;
+
+  /* light header3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #000000;
+}
+
+.bigcaption1 {
+  position: absolute;
+  width: 217px;
+  height: 47px;
+  left: 128px;
+  top: 1548px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  color: #000000;
+}
+
+.washingtonpic {
+  position: absolute;
+  width: 275px;
+  height: 275px;
+  left: 430px;
+  top: 1298px;
+
+  background: url(.jpg);
+  border-radius: 5px;
+}
+
+.uwlabel {
+  position: absolute;
+  width: 182px;
+  height: 23px;
+  left: 428px;
+  top: 1217px;
+
+  /* light header3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.bigcaption2 {
+  position: absolute;
+  width: 217px;
+  height: 47px;
+  left: 430px;
+  top: 1254px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  color: #262626;
+
+  /* or 125% */
+}
+
+.fidelitypic {
+  position: absolute;
+  width: 275px;
+  height: 275px;
+  left: 727px;
+  top: 1225px;
+
+  background: url(.jpg), #c4c4c4;
+  border-radius: 2px;
+}
+.fidelitylabel {
+  position: absolute;
+  width: 182px;
+  height: 23px;
+  left: 727px;
+  top: 1512px;
+
+  /* light header3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #262626;
+}
+
+.bigcaption3 {
+  position: absolute;
+  width: 217px;
+  height: 47px;
+  left: 727px;
+  top: 1547px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  color: #262626;
+}
+
+.learn {
+  position: absolute;
+  width: 372px;
+  height: 50px;
+  left: 467px;
+  top: 1048px;
+
+  /* Body Text */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+}
+
+.column .email {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.column .emaillink {
+  color: black;
+  text-decoration: none;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.discussion {
+  position: absolute;
+  width: 863px;
+  height: 19px;
+  left: 128px;
+  top: 540px;
+
+  /* Header 2 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  /* or 137% */
+
+  text-align: left;
+
+  color: #000000;
+}
+.disclaimer3 {
+  position: absolute;
+  width: 940px;
+  height: 31px;
+  left: 132px;
+  top: 600px;
+
+  /* Caption */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 26px;
+  /* or 217% */
+
+  color: #000000;
+}
+
+.line {
+  position: absolute;
+  width: 870px;
+  height: 0px;
+  left: 130px;
+  top: 656px;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.username {
+  position: absolute;
+  width: 240px;
+  height: 24px;
+  left: 130px;
+  top: 685px;
+
+  /* Body Text */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  color: #000000;
+}
+
+.columnxtext {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 130px;
+  top: 718px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  color: #000000;
+}
+
+.columnytext {
+  position: absolute;
+  width: 476px;
+  height: 52px;
+  left: 442px;
+  top: 718px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  color: #000000;
+}
+
+.line2 {
+  position: absolute;
+  width: 870px;
+  height: 0px;
+  left: 130px;
+  top: 822px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.username2 {
+  position: absolute;
+  width: 240px;
+  height: 24px;
+  left: 130px;
+  top: 860px;
+
+  /* Body Text */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  color: #000000;
+}
+
+.columnztext {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 130px;
+  top: 885px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  color: #000000;
+}
+
+.columnttext {
+  position: absolute;
+  width: 476px;
+  height: 52px;
+  left: 442px;
+  top: 885px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  color: #000000;
+}
+
+.line3 {
+  position: absolute;
+  width: 870px;
+  height: 0px;
+  left: 130px;
+  top: 822px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.email {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  left: 129px;
+  top: 990px;
+  text-transform: uppercase;
+  text-color: white;
+  background-color: #223781;
+  border-color: #223781;
+}
+
+.column .email {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.column .email:hover {
+  background-color: lightblue;
+  color: white;
+  transition: background 0.5s ease-in-out;
+}
+
+.column .emaillink {
+  text-decoration: none;
+  font-family: "Inter";
+  font-weight: 700;
+  color: black;
+}
+
+.readmore2 {
+  position: absolute;
+  width: 266px;
+  height: 26px;
+  left: 130px;
+  top: 1080px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.disclaimer100 {
+}
+
+.column100pic {
+  position: absolute;
+  width: 273px;
+  height: 275px;
+  left: 130px;
+  top: 1080px;
+
+  background: url(.jpg);
+}
+
+.column100label {
+  position: absolute;
+  width: 182px;
+  height: 18px;
+  left: 130px;
+  top: 1380px;
+
+  /* light header3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+
+  color: #262626;
+}
+.column100description {
+  position: absolute;
+  width: 217px;
+  height: 47px;
+  left: 130px;
+  top: 1420px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  color: #000000;
+}
+
+.column101pic {
+}
+.column101label {
+}
+
+.column101description {
+}
