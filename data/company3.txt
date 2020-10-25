@@ -1,0 +1,9 @@
+name, category, amount
+CHILDRENS HEALTH FUND,CHILDREN'S HEALTH,1200
+PATERSON HABITAT FOR HUMANITY INC,VOLUNTEER INCENTIVE PROGRAM,5000
+Society of Americans for National Existence,Civil Rights,8900
+CENTER FOR SECURITY POLICY INC,Research Institutes,8500
+Jihad Watch,International Studies,12600
+Foundation for Defense of Democracies,Research Institutes,1800
+Global Faith Institute Inc,Christian,1900
+Conservative Forum of Silicon Valley,Civil Liberties Advocacy,21000
