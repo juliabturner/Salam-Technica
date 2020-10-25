@@ -1,0 +1,6 @@
+name, category, amount
+ACT for America, Civil Rights,80000
+Center for Security Policy, Civil Rights,100600
+Family Security Matters,Civil Rights,10000
+Islamic Relief Canada, Humanitarian,6700
+Council On American-Islamic Relations,Civil Rights,200
