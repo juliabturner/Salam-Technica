@@ -35,6 +35,8 @@ function autocomplete(inp, arr) {
         b.addEventListener("click", function (e) {
           /*insert the value for the autocomplete text field:*/
           inp.value = this.getElementsByTagName("input")[0].value;
+          //create if/else statements based on company
+          window.location.href = "/walmart.html";
           /*close the list of autocompleted values,
                     (or any other open lists of autocompleted values:*/
           closeAllLists();
@@ -95,6 +97,7 @@ function autocomplete(inp, arr) {
       }
     }
   }
+
   /*execute a function when someone clicks in the document:*/
   document.addEventListener("click", function (e) {
     closeAllLists(e.target);
