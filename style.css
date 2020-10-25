@@ -18,7 +18,7 @@
 }
 
 .navigation img {
-  margin: 20px 10px 10px 10px;
+  margin: 20px 200px 10px 10px;
 }
 
 .navigation a:hover {
@@ -36,9 +36,6 @@ ul {
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
 body {
   font: 16px Arial;
 }
@@ -71,8 +68,8 @@ input[type="text"] {
 }
 input[type="submit"] {
   background-color: #222222;
-  color: #fff;
-  margin: 0px 100px 0px 0px;
+  color: #222222;
+  margin: 0px 0px 0px 0px;
   border-radius: 5px;
 }
 .autocomplete-items {
@@ -172,4 +169,62 @@ input[type="submit"] {
 
 .btn {
   background-color: #2237a1;
+}
+
+.promo input[type="text"] {
+  height: 60px;
+  border-radius: 15px;
+  font-size: 19pt;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 0px;
+  padding: 0px;
+  max-width: 2000px;
+}
+.col {
+  width: 500px;
+  background-color: #f7fafc;
+}
+.col img {
+  text-align: right;
+}
+
+.col input {
+  background-color: white;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+.col .button input {
+  width: 100px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.col h4 {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.col p {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 0px;
+}
+
+.links {
+  text-align: center;
+  padding: 20px;
+  font-family: "Inter";
+  font-weight: 700;
+  background-color: #262626;
+  color: white;
 }
