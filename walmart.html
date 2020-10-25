@@ -17,14 +17,15 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Bootstrap CSS -->
-    <link
+     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- <link rel="stylesheet" href="style.css"/>  --> 
+    
     <link rel="stylesheet" href="company.css"/>
-    <link rel="stylesheet" href="style.css"/>
     <meta charset="utf-8" />
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=PT+Serif&display=swap" rel="stylesheet">
@@ -63,21 +64,31 @@
         <a href="contact.asp">Connect</a>
       </div>
 
-<h3>Company</h3> 
+      <div class="row"> 
+        <div class="column3">
+<h3 class="company">Company:</h3> 
+<img src="Images/line.png" alt="" class="companyline"> 
+
 <br>
-<h3>Category</h3>
+<h3 class="category">Category:</h3>
 <br> 
-<h3>Updated</h3>
+<h3 class="updated">Updated:</h3>
 <br> 
-<h3>Share for change<h3> 
+<h3 class="share">Share for change</h3> 
 
-<p>FB</p> <!-- Will have to put a border box around this in the CSS-->
-<p>TW</p> <!-- Will have to put a border box around this in the CSS-->
+<p class="fb">FB</p> <!-- Will have to put a border box around this in the CSS-->
+<p class="tw">TW</p> <!-- Will have to put a border box around this in the CSS-->
 
-<p>Copy Link</p> <!-- Will have to put a border box around this in the CSS-->
 
+<button class="link">Copy Link</button>
+        </div> 
+
+<!-- <div class="primary">
+<button>Copy Link</button> 
+</div> <!-- Will have to put a border box around this in the CSS-->
+<div class="column4">
 <h1>What is Company X Doing?</h1> 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus interdum posuere duis nec neque. 
+<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus interdum posuere duis nec neque. 
   Suspendisse blandit adipiscing mauris eget posuere molestie id morbi. Facilisis vitae mollis non
   lacinia tempor. Donec lorem tincidunt convallis sit. 
   Montes, amet, sed elit mi, sed tristique. 
@@ -86,23 +97,26 @@
   Augue nascetur mattis felis, a nibh sit. Consequat pharetra eget ut ultrices egestas et.
    Etiam quis id dignissim vitae. Neque duis tortor vulputate aliquet 
    suspendisse phasellus elementum. </p> 
-
+</div>
+</div> 
    <div class="row">
-      <div class="column">
-        <img src="Group 9.png" alt="Snow" style="width:100%">
+      <div class="column1">
+        <img src="Images/Landingcarousel/Group9.png" alt="" style="width:100%">
       </div>
-      <div class="column">
-        <img src="Group 9.png" alt="Forest" style="width:100%">
+      <div class="column2">
+        <img src="Images/Landingcarousel/Group9.png" alt="" style="width:100%">
       </div>
-      <p>Woah, what does this box mean?<a href="">Learn More.</a></p>
+      <p class="question">Woah, what does this box mean?<a href=""> Learn More.</a></p>
     </div>
 
     <div class=contact">
       <div class="row">
         <div class="column">
-            <button class="email_company"type="button"> 
+
+            <button type="button" class="btn btn-primary btn-lg email">Email E-corp</button>
+            <!-- <button class="email_company"type="button"> 
                 Email Walmart
-          </button>
+          </button> --> 
           </div>
           <div class="column">
           <p>Interested in learning more about Walmart and their practices to combat Isalamophobia? 
@@ -113,13 +127,25 @@
         <p>Make informed choices about the places where you spend your money. Learn about what other top companies are doing.</p>
         <div class="row">
             <div class="column">
-<img 
+<img src="" alt=""> 
+<h4>Walmart</h4> 
+<p class="bigcaption">Learn about the work being done by said company.</p> 
             </div>
-            <div class="column"></div>
-            <div class="column"></div>
+
+            <div class="column">
+            <img src="" alt=""> 
+            <p class="bigcaption">Learn about the work being done by said company.</p> 
+            <h4>Walmart</h4> 
+            </div>
+        
+            <div class="column">
+            <img src="" alt=""> 
+            <h4>Walmart</h4> 
+            <p class="bigcaption">Learn about the work being done by said company.</p> 
+            </div> 
+            
           </div>
 
-
+<script src = "filter.js"></script>
 </body> 
-
 </html>
