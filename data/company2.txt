@@ -1,0 +1,8 @@
+name, category, amount
+CHILDRENS HEALTH FUND,CHILDREN'S HEALTH,1200
+American-Arab Anti-Discrimination Committee, Civil Rights,15600
+Muslim Advocates,Civil Rights,10000
+Islamic Relief Canada, Humanitarian,9000
+Council On American-Islamic Relations,Civil Rights,2000
+PATERSON HABITAT FOR HUMANITY INC,VOLUNTEER INCENTIVE PROGRAM,5000
+ONLY MAKE BELIEVE INC,VOLUNTEER INCENTIVE PROGRAM,8900
